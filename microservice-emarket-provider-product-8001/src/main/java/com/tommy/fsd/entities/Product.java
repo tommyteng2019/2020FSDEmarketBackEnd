@@ -9,7 +9,6 @@ import javax.persistence.Id;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
@@ -20,8 +19,7 @@ public class Product implements Serializable {
     @NotNull
     private String productName;
 
-    @NotNull
-    private BigDecimal productPrice;
+    private int productPrice;
 
     @NotNull
     @Min(0)
@@ -58,7 +56,7 @@ public class Product implements Serializable {
         this.productName = productName;
     }
 
-    public BigDecimal getProductPrice() {
+    public int getProductPrice() {
         return productPrice;
     }
 

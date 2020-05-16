@@ -1,3 +1,4 @@
+/*
 package com.tommy.fsd.repo;
 
 import com.tommy.fsd.entities.Product;
@@ -40,3 +41,4 @@ public class ProductRepoTest {
         productRepo.deleteById((long) 2);
     }
 }
+*/

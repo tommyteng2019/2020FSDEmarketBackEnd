@@ -17,3 +17,14 @@ spring:
       max-wait-millis: 150
   jpa:
     show-sql: true
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      #defaultZone: http://eureka6001.com:6001/eureka,http://eureka6002.com:6002/eureka
+      defaultZone: http://localhost:6001/eureka,http://localhost:6002/eureka
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
